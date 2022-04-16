@@ -9,7 +9,7 @@ export default function MissionCard( props ) {
         destination
     } = props
   return (
-    <div>
+    <div data-testid='mission-card'>
         <p>{ name }</p>
         <p>{ year }</p>
         <p>{ country }</p>
