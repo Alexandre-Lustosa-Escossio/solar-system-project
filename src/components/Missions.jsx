@@ -8,7 +8,7 @@ export default function Missions() {
     <div>
         <Title headline='Missions'/>
         {missions.map(mission => 
-            <MissionCard {...mission} /> )}
+            <MissionCard key={mission.name} {...mission} /> )}
     </div>
   )
 }

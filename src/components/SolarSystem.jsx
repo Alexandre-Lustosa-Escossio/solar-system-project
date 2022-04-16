@@ -9,7 +9,9 @@ export default function SolarSystem() {
         Solar System Component
         <Title headline={ 'Planets' } />
         {planets.map(planet => 
-          <PlanetCard planetName={ planet.name } planetImage={ planet.image }/>
+          <PlanetCard key={planet.name} 
+          planetName={ planet.name } 
+          planetImage={ planet.image }/>
         )}
     </div>
   )
