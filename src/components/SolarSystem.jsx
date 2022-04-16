@@ -5,9 +5,9 @@ import PlanetCard from './PlanetCard'
 
 export default function SolarSystem() {
   return (
-    <main>
+    <main className='d-flex flex-column align-items-center'>
         <Title headline={ 'Planets' } />
-        <div className='carousel slide'>
+        <div className='d-flex flex-wrap justify-content-evenly'>
           {planets.map(planet => 
             <PlanetCard key={planet.name} 
             planetName={ planet.name } 
