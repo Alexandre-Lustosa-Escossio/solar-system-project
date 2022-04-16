@@ -1,7 +1,10 @@
 import React from 'react'
+import Title from './Title'
 
 export default function Missions() {
   return (
-    <div>Missions</div>
+    <div>
+        <Title headline='Missions'/>
+    </div>
   )
 }
