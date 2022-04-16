@@ -7,8 +7,11 @@ export default function Missions() {
   return (
     <div>
         <Title headline='Missions'/>
-        {missions.map(mission => 
-            <MissionCard key={mission.name} {...mission} /> )}
+        <div className='d-flex flex-wrap
+        justify-content-around align-items-center'>
+          {missions.map(mission => 
+              <MissionCard key={mission.name} {...mission} /> )}
+        </div>
     </div>
   )
 }

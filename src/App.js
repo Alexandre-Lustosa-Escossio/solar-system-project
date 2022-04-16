@@ -5,7 +5,7 @@ import SolarSystem from './components/SolarSystem'
 
 export default function App() {
   return (
-    <main>
+    <main className='d-flex flex-column align-items-center'>
       <Header />
       <SolarSystem />
       <Missions />
