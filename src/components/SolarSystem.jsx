@@ -5,14 +5,15 @@ import PlanetCard from './PlanetCard'
 
 export default function SolarSystem() {
   return (
-    <div>
-        Solar System Component
+    <main>
         <Title headline={ 'Planets' } />
-        {planets.map(planet => 
-          <PlanetCard key={planet.name} 
-          planetName={ planet.name } 
-          planetImage={ planet.image }/>
-        )}
-    </div>
+        <div className='carousel slide'>
+          {planets.map(planet => 
+            <PlanetCard key={planet.name} 
+            planetName={ planet.name } 
+            planetImage={ planet.image }/>
+          )}
+        </div>
+    </main>
   )
 }
