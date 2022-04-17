@@ -1,0 +1,7 @@
+#missions-container, .carousel-root{
+    max-width: 100%;
+}
+
+.control-dots{
+    top: 200px;
+}

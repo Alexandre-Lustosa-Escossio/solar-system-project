@@ -1,5 +1,6 @@
 import React from 'react'
 import propTypes from 'prop-types'
+import '../style/MissionCard.css'
 
 export default function MissionCard( props ) {
     const {
@@ -9,13 +10,14 @@ export default function MissionCard( props ) {
         destination
     } = props
   return (
-    <div data-testid='mission-card'
-    className='d-block w-25 m-3 border' >
-        <p>{ name }</p>
-        <p>{ year }</p>
-        <p>{ country }</p>
-        <p>{ destination }</p>
-    </div>
+      <div data-testid='mission-card'
+      className='card bg-secondary bg-gradient bg-opacity-10 m-2 d-inline-block py-4' 
+      id='mission-card'>
+          <p>{ name }</p>
+          <p>{ year }</p>
+          <p>{ country }</p>
+          <p>{ destination }</p>
+      </div>
   )
 }
 
