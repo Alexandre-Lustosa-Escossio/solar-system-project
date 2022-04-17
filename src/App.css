@@ -1,5 +1,6 @@
 Main {
   background-image: url('./images/background.png');
   color: antiquewhite;
+  height: 100vh;
 }
 
